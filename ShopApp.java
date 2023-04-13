@@ -25,7 +25,7 @@ public class ShopApp {
         for (int i = 0; i < discounted.length; i++) {
             Discountable discountable = discounted[i];
             double discount = discountable.calculateDiscount(product);
-            System.out.println("Discount: " + discount + " Price after discount: " + (product.getPrice() - discount));
+            System.out.println(discountable.getClass().getSimpleName() + " Discount: " + discount + " Price after discount: " + (product.getPrice() - discount));
         }
     }
 
